@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191c32;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.brand {
+  margin-top: -7px;
+}
+.brand span {
+  color: aqua;
+}
+
+.texto-cursiva {
+font-style: italic;
+
+
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.menu  li {
+  list-style: none;
+
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.menu li:hover a{
+  background-color: aquamarine;
+  color: #191c32;
+}
+
+.menu .active {
+  color: aquamarine;
+ 
+}
+
+
+.menu li a:hover {
+  color: black;
+}
+
+/*con display none se esta ocultando la barrita de menu desplegable*/
+.toggle-menu, .info-content_subtitle  {
+  display: none;
+}
+
+
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+/*clamp tipografia responsive*/
+h1 {
+  font-size: clamp(4vw, 1.5em, 3em);
+}
+
+.info-content span {
+  color: aqua;
+}
+
+
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+}
+
+.download-cv:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
+.main img {
+  border:  7px solid aqua;
+  width: 700px;
+  height: 620px;
+  z-index: 1;
+}
+
+.main p{
+  text-align: justify;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+  
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #191c32;
+  margin-top: -30px;
+}
+
+/*Aqui se encuentra el texto de acerca de mi */
+.about-info > p {
+  color: black;
+  
+}
+
+/*Formato de las viñetas en la información sobre mi */
+#mi-lista li{
+  color: black;
+  font-weight: bold;
+}
+
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+
+.about p {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  
+  background-color: #191c32;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.portfolio-heading h2{
+  margin-top: 200px;
+}
+ 
+
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: aqua;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #191c32;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2,
+.contact-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #2b3058;
+  margin: 1em;
+}
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/2-original.png);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+.contact-section {
+  padding: 3em;
+}
+
+.container-contact {
+  margin: 0 auto;
+  margin-top: 10em;
+}
+
+
+
+.contact-section img {
+  width: 800px;
+  height: 650px;
+  bottom: 0px;
+  margin-top: -120px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding: 2em;
+  background-color: aqua;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+
+
+/* ESPACIO PARA LA PARTE DE HABILIDADES TECNOLOGICAS*/
+.caja-padre{
+  width: 40%;
+  min-width: 590px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 220%;
+
+}
+
+/*Aqui se da el formato de la cajita con el linear gradient que aplica un degradado*/
+.contenderor{
+  width: 100%;
+  padding: 30px 30px 50px;
+  background: linear-gradient(450deg,darkblue,black);
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+
+/*Aqui se aplica a la clase contenedor y a todos cambia el color de la letra*/
+.contenderor *{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+
+/*Ayuda a aplicar cambios a diferentes elementos pero que se encuentran en una misma clase*/
+/*not lastchild*/
+.Habilidades:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+
+.Detalles{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Menu{
+  position: relative;
+  border: 1px solid cyan;
+  border-radius: 20px;
+}
+
+
+/*a la clase menu y a los div aplica el o los cambios a todos*/
+/*Aqui es donde se generan las barritas*/
+.Menu div{
+  position: relative;
+  width: 0;
+  height: 8px;
+  border-radius: 10px;
+  background-color: cyan;
+}
+
+/*Animación*/
+
+#html-menu{
+  animation: html-barra 2s forwards;
+  /*hasta aqui se define la acción mas no donde se aplicara*/
+}
+
+@keyframes html-barra{
+  100%{
+      width:30% ;
+  }
+}
+
+#css-menu{
+  animation: css-barra 2s forwards;
+}
+
+/*en el segundo porcentaje se aplica el porcentaje que se aplicara*/
+@keyframes css-barra{
+  100%{
+      width:30% ;
+  }
+}
+
+
+#js-menu{
+  animation: css-barra 2s forwards;
+}
+
+@keyframes js-barra{
+  100%{
+      width:30% ;
+  }
+}
+
+#python-menu{
+  animation: css-barra 2s forwards;
+}
+
+@keyframes python-barra{
+  100%{
+      width:30% ;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.portfolio-heading{
+  scroll-margin-top: -20ex;
+}
+
+.about-info{
+  scroll-margin-top: 23.1ex;
+}
+
+.contenderor{
+  justify-content: center;
+}
+
+.info-content{
+  scroll-margin-top: 1ex;
+}
